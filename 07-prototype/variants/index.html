@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Variantes · Pedro Gonzálvez</title>
+<style>
+  :root {
+    --bg: #0e1b2a;
+    --on: #f1e8d8;
+    --rule: rgba(241, 232, 216, 0.12);
+    --accent: #7aa3c4;
+    --label-h: 56px;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--on);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    overflow: hidden;
+  }
+  .stage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  .col {
+    position: relative;
+    border-right: 1px solid var(--rule);
+    overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+  .col:last-child { border-right: 0; }
+  .col__label {
+    height: var(--label-h);
+    padding: 0 18px;
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 1px solid var(--rule);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(241, 232, 216, 0.85);
+    background: rgba(255, 255, 255, 0.02);
+  }
+  .col__label strong { color: var(--on); font-weight: 600; }
+  .col__label .meta { font-weight: 400; color: rgba(241, 232, 216, 0.6); letter-spacing: 0.08em; text-transform: none; font-size: 11px; }
+  .col__label a {
+    color: var(--accent); text-decoration: none;
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+  }
+  .col__frame {
+    flex: 1;
+    border: 0;
+    width: 100%;
+  }
+  /* Toolbar */
+  .toolbar {
+    position: fixed;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    display: flex; align-items: center; gap: 12px;
+    padding: 10px 16px;
+    background: rgba(14, 27, 42, 0.92);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+  }
+  .toolbar p { margin: 0; opacity: 0.7; }
+  .toolbar kbd {
+    background: rgba(241, 232, 216, 0.1);
+    border: 1px solid var(--rule);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font: inherit; font-size: 10px;
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <section class="col">
+    <header class="col__label">
+      <span><strong>V1</strong> · Spectral + Manrope</span>
+      <span class="meta">Header fijo · trama rejilla</span>
+      <a href="v1/" target="_blank" rel="noopener">abrir →</a>
+    </header>
+    <iframe class="col__frame" src="v1/" title="Variante 1"></iframe>
+  </section>
+
+  <section class="col">
+    <header class="col__label">
+      <span><strong>V2</strong> · Bricolage Grotesque + Sora</span>
+      <span class="meta">Pastilla flotante · trama puntos</span>
+      <a href="v2/" target="_blank" rel="noopener">abrir →</a>
+    </header>
+    <iframe class="col__frame" src="v2/" title="Variante 2"></iframe>
+  </section>
+
+  <section class="col">
+    <header class="col__label">
+      <span><strong>V3</strong> · Brutalista · Archivo Black + Roboto Mono</span>
+      <span class="meta">Header institucional · cross-hatch</span>
+      <a href="v3/" target="_blank" rel="noopener">abrir →</a>
+    </header>
+    <iframe class="col__frame" src="v3/" title="Variante 3"></iframe>
+  </section>
+</div>
+
+<div class="toolbar">
+  <p>Cada panel tiene su scroll y su cursor reveal. Trama visible sólo cerca del cursor.</p>
+  <p>·</p>
+  <p>Engranaje <strong>⚙</strong> abajo derecha en cada variante: ajustes de color en vivo.</p>
+  <p>·</p>
+  <p>"abrir →" para pantalla completa.</p>
+</div>
+
+</body>
+</html>

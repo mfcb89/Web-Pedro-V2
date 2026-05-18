@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>V1 · Pedro Gonzálvez</title>
+<link rel="icon" href="../../../03-media/brand/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../_shared/tweaks.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<div class="trace" aria-hidden="true"></div>
+
+<header class="nav nav--fixed" role="banner">
+  <a class="nav__brand" href="#">
+    <img src="../../../03-media/brand/logo-isotipo.svg" alt="PG" />
+    <span><strong>Pedro Gonzálvez</strong><i class="nav__pipe">|</i>Arquitecto técnico</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#servicios">Servicios</a>
+    <a href="#sobre">Sobre Pedro</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <a class="nav__cta" href="#contacto">Cuénteme su caso</a>
+</header>
+
+<main id="main">
+
+<!-- ============================================================
+     HERO: scroll-pinned, 2 fases crossfade (poético → operativo)
+     ============================================================ -->
+<section class="hero-wrap" aria-label="Hero">
+  <div class="hero">
+    <video class="hero__video is-active" src="../../../03-media/hero/videos/01-loop-normal.mp4" muted loop playsinline preload="auto" autoplay aria-hidden="true" tabindex="-1"></video>
+    <video class="hero__video" src="../../../03-media/hero/videos/03-loop-aged.mp4" muted loop playsinline preload="auto" autoplay aria-hidden="true" tabindex="-1"></video>
+    <video class="hero__video" src="../../../03-media/hero/videos/05-loop-balcony.mp4" muted loop playsinline preload="auto" autoplay aria-hidden="true" tabindex="-1"></video>
+    <video class="hero__video" src="../../../03-media/hero/videos/07-loop-material-detail.mp4" muted loop playsinline preload="auto" autoplay aria-hidden="true" tabindex="-1"></video>
+
+    <!-- Fase 1: tiempo — edificio en buen estado -->
+    <div class="hero__phase is-active" data-phase="1" aria-hidden="false">
+      <h1 class="hero__title animated-heading"
+          data-text="El tiempo pasa para todos.&#10;Para los edificios también."></h1>
+      <p class="hero__lead fade-in" data-delay="900" data-duration="1000">
+        Cada edificio tiene una historia. Lo que parece superficial
+        muchas veces indica algo más profundo.
+      </p>
+    </div>
+
+    <!-- Fase 2: señales — edificio envejecido -->
+    <div class="hero__phase" data-phase="2" aria-hidden="true">
+      <h1 class="hero__title">
+        El edificio<br/>muestra sus señales.
+      </h1>
+      <p class="hero__lead">
+        Humedades, grietas, oxidaciones, pérdida de material.
+        Cada señal cuenta algo.
+      </p>
+    </div>
+
+    <!-- Fase 3: diagnóstico — detalle de balcón -->
+    <div class="hero__phase" data-phase="3" aria-hidden="true">
+      <h1 class="hero__title">
+        Antes de intervenir,<br/>hay que entender<br/>qué dicen las señales.
+      </h1>
+      <p class="hero__lead">
+        No toda intervención es igual. El diagnóstico determina la actuación.
+      </p>
+    </div>
+
+    <!-- Fase 4: operativa — detalle de material -->
+    <div class="hero__phase" data-phase="4" aria-hidden="true">
+      <h1 class="hero__title hero__title--ops">
+        <span class="ops-line ops-line--1">Reviso.</span>
+        <span class="ops-line ops-line--2">Documento.</span>
+        <span class="ops-line ops-line--3">Adapto.</span>
+      </h1>
+      <p class="hero__lead">
+        Informes técnicos, ITE/IEE, certificados, segunda ocupación,
+        rehabilitación, accesibilidad, reformas y ascensores. Trato
+        directo con el técnico colegiado que estudia su caso.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#contacto">Cuénteme su caso</a>
+        <a class="btn btn--ghost" href="#servicios">Ver servicios <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+
+    <!-- Indicador discreto de fase -->
+    <div class="hero__progress" aria-hidden="true">
+      <span class="hero__progress-dot is-active" data-target="1"></span>
+      <span class="hero__progress-dot" data-target="2"></span>
+      <span class="hero__progress-dot" data-target="3"></span>
+      <span class="hero__progress-dot" data-target="4"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     INTRO: marco + pedro unificados, foto sticky derecha
+     ============================================================ -->
+<section class="intro" id="sobre" aria-labelledby="pedro-heading">
+  <div class="intro__left">
+    <div class="marco__inner">
+      <p class="marco__frase">Cada edificio<br/>plantea una<br/>situación distinta.</p>
+      <p class="marco__body">Patologías visibles, nuevas exigencias normativas o cambios de uso que requieren adaptación. Mi trabajo como técnico consiste en analizar cada caso, valorar su alcance y definir la actuación adecuada.</p>
+      <p class="marco__firma">— Pedro Gonzálvez Abadía, Elche</p>
+    </div>
+    <div class="pedro__text">
+      <h2 class="pedro__heading" id="pedro-heading">
+        Trabajo<br/>sobre edificio<br/>existente.
+      </h2>
+      <p class="pedro__bio">
+        Reviso el estado del inmueble, documento lo que encuentro y defino qué hay que hacer y en qué orden. Si hay que ejecutar, también lo dirijo. Trato directo: sin gestor intermedio, sin oficina que filtre el caso.
+      </p>
+      <a class="pedro__link" href="/sobre-pedro">Cómo entiendo el trabajo técnico <span aria-hidden="true">→</span></a>
+    </div>
+  </div>
+  <figure class="intro__foto">
+    <img loading="lazy" decoding="async"
+         src="../../../03-media/images-final/images/10-sobre-pedro-trabajando.png"
+         alt="Pedro Gonzálvez en una inspección técnica" />
+  </figure>
+</section>
+
+<!-- ============================================================
+     SERVICIOS: 3 situaciones, 8 servicios organizados por ejes
+     ============================================================ -->
+<section class="servicios" id="servicios" aria-labelledby="servicios-heading">
+  <header class="servicios__head">
+    <h2 class="display" id="servicios-heading">
+      Servicios para analizar,<br/>adaptar y mantener su edificio.
+    </h2>
+  </header>
+
+  <ol class="situaciones" role="list">
+
+    <li class="situacion">
+      <div class="situacion__ctx">
+        <span class="situacion__n" aria-hidden="true">01</span>
+        <h3>Cuando el edificio<br/>da señales.</h3>
+        <p>Fisuras, humedades, deformaciones, pérdida de material. Lo reviso, lo diagnostico y documento qué conviene hacer.</p>
+      </div>
+      <ul class="situacion__srvs" role="list">
+        <li>
+          <a href="#contacto">
+            <span class="srv-nombre">Informes técnicos</span>
+            <span class="srv-desc">Diagnóstico escrito del estado del inmueble: causa, alcance y recomendación de actuación proporcional.</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contacto">
+            <span class="srv-nombre">Rehabilitación</span>
+            <span class="srv-desc">Diagnóstico, proyecto y dirección de obra para fachadas, cubiertas y elementos estructurales deteriorados.</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="situacion">
+      <div class="situacion__ctx">
+        <span class="situacion__n" aria-hidden="true">02</span>
+        <h3>Cuando el expediente<br/>no está en regla.</h3>
+        <p>ITE pendiente, certificado sin tramitar, licencia caducada. Identifico el trámite, preparo la documentación y la dejo lista para presentar.</p>
+      </div>
+      <ul class="situacion__srvs" role="list">
+        <li>
+          <a href="#contacto">
+            <span class="srv-nombre">ITE / IEE</span>
+            <span class="srv-desc">Inspección técnica obligatoria por ley: visita, informe estandarizado y presentación en el ayuntamiento.</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contacto">
+            <span class="srv-nombre">Certificados</span>
+            <span class="srv-desc">Eficiencia energética, segunda ocupación, antigüedad o estado de conservación: el documento correcto, firmado y registrado.</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contacto">
+            <span class="srv-nombre">Segunda ocupación</span>
+            <span class="srv-desc">Licencia municipal exigida en la Comunitat Valenciana para contratos de arrendamiento de vivienda usada.</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="situacion">
+      <div class="situacion__ctx">
+        <span class="situacion__n" aria-hidden="true">03</span>
+        <h3>Cuando el uso<br/>ya no encaja.</h3>
+        <p>Accesibilidad, ascensor, reforma de vivienda o local. Valoro viabilidad, proyecto la intervención y dirijo la ejecución.</p>
+      </div>
+      <ul class="situacion__srvs" role="list">
+        <li>
+          <a href="#contacto">
+            <span class="srv-nombre">Reformas</span>
+            <span class="srv-desc">Proyecto y dirección de obra para la adaptación de vivienda o local a un uso actual o nuevo programa.</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contacto">
+            <span class="srv-nombre">Accesibilidad</span>
+            <span class="srv-desc">Análisis y adecuación de barreras arquitectónicas en portal, escalera y fachada para comunidades de propietarios.</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contacto">
+            <span class="srv-nombre">Ascensores</span>
+            <span class="srv-desc">Estudio de viabilidad técnica, proyecto de instalación y dirección de obra en edificios sin ascensor.</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+  </ol>
+
+  <p class="servicios__pie">
+    ¿No está seguro qué servicio necesita?
+    <a href="#contacto">Cuénteme el caso y lo ordenamos juntos.</a>
+  </p>
+</section>
+
+<!-- ============================================================
+     ANTES / DESPUÉS: slider comparativo de diagnóstico
+     ============================================================ -->
+<section class="antesdespues" aria-label="Comparativa antes y después">
+  <div class="ad__wrap">
+    <div class="ad__slider" style="--pos:50%"
+         role="group" aria-label="Arrastre para comparar estado del edificio">
+      <div class="ad__pane ad__pane--before">
+        <img loading="lazy" decoding="async"
+             src="../../../03-media/images-final/images/02-hero-edificio-envejecido.png"
+             alt="Edificio con señales de deterioro — estado antes de intervención" />
+        <span class="ad__label" aria-hidden="true">Antes</span>
+      </div>
+      <div class="ad__pane ad__pane--after">
+        <img loading="lazy" decoding="async"
+             src="../../../03-media/images-final/images/01-hero-edificio-normal.png"
+             alt="Edificio en buen estado" />
+        <span class="ad__label ad__label--right" aria-hidden="true">Después</span>
+      </div>
+      <div class="ad__handle"
+           role="slider" aria-label="Comparar antes y después"
+           aria-valuemin="5" aria-valuemax="95" aria-valuenow="50"
+           tabindex="0">
+        <div class="ad__line" aria-hidden="true"></div>
+        <div class="ad__knob" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+            <circle cx="11" cy="11" r="10" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M7 11H3M7 11L5 9M7 11L5 13M15 11H19M15 11L17 9M15 11L17 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="ad__caption">
+      <p class="ad__text">La diferencia entre un edificio que aguanta y uno que acumula daño no siempre se ve a simple vista. La inspección técnica lee lo que hay debajo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEED: casos + publicaciones Instagram como contenido vivo
+     ============================================================ -->
+<section class="feed" id="casos" aria-labelledby="feed-heading">
+
+  <header class="feed__head">
+    <div class="feed__head-left">
+      <h2 class="feed__titulo" id="feed-heading">Cada visita<br/>cuenta algo.</h2>
+    </div>
+    <div class="feed__head-right">
+      <p>Casos documentados, notas técnicas y publicaciones directamente desde el campo.</p>
+    </div>
+  </header>
+
+  <!-- Grid editorial de casos -->
+  <div class="feed__grid">
+
+    <article class="feed__card feed__card--featured">
+      <figure class="feed__card-img">
+        <img loading="lazy" decoding="async"
+             src="../../../03-media/images-final/images/05-caso-cubierta-baldosin-catalan.png"
+             alt="Cubierta transitable de baldosín catalán con filtraciones, Elche" />
+      </figure>
+      <div class="feed__card-body">
+        <span class="feed__tag">Caso · Cubierta</span>
+        <h3>Cubierta transitable de baldosín catalán con filtraciones</h3>
+        <p>Filtraciones persistentes tras cada lluvia en un edificio de 12 viviendas. Diagnóstico, proyecto y dirección de obra en Elche.</p>
+      </div>
+    </article>
+
+    <article class="feed__card">
+      <figure class="feed__card-img">
+        <img loading="lazy" decoding="async"
+             src="../../../03-media/images-final/images/06-caso-edificio-caravista-80-90.png"
+             alt="Edificio de ladrillo caravista años 80-90, Elche" />
+      </figure>
+      <div class="feed__card-body">
+        <span class="feed__tag">Caso · ITE</span>
+        <h3>Edificio de ladrillo caravista, años 80</h3>
+      </div>
+    </article>
+
+    <article class="feed__card">
+      <figure class="feed__card-img">
+        <img loading="lazy" decoding="async"
+             src="../../../03-media/images-final/images/09-caso-patio-interior.png"
+             alt="Patio interior comunitario con problemas de humedad" />
+      </figure>
+      <div class="feed__card-body">
+        <span class="feed__tag">Caso · Rehabilitación</span>
+        <h3>Patio interior comunitario</h3>
+      </div>
+    </article>
+
+    <article class="feed__card">
+      <figure class="feed__card-img">
+        <img loading="lazy" decoding="async"
+             src="../../../03-media/images-final/images/18-caso-cubierta-plana-sumidero.png"
+             alt="Cubierta plana con sumidero bloqueado y peto deteriorado" />
+      </figure>
+      <div class="feed__card-body">
+        <span class="feed__tag">Caso · Cubierta plana</span>
+        <h3>Cubierta plana: sumidero bloqueado y peto deteriorado</h3>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Tira de publicaciones Instagram -->
+  <div class="feed__posts">
+    <div class="feed__posts-head">
+      <a class="feed__handle" href="https://instagram.com/" target="_blank" rel="noopener noreferrer">@elarquitenico</a>
+      <a class="feed__ig-cta" href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+        Seguir <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <div class="feed__strip" aria-label="Publicaciones de Instagram">
+
+      <article class="feed__post">
+        <figure class="feed__post-img">
+          <video muted loop playsinline autoplay aria-hidden="true" tabindex="-1">
+            <source src="../../../03-media/hero/videos/07-loop-material-detail.mp4" type="video/mp4" />
+          </video>
+        </figure>
+        <p class="feed__post-cap">Las juntas del caravista que nadie revisa</p>
+      </article>
+
+      <article class="feed__post">
+        <figure class="feed__post-img">
+          <img loading="lazy" decoding="async"
+               src="../../../03-media/images-final/images/19-post-3-senales.png"
+               alt="3 señales en su fachada que no debe ignorar" />
+        </figure>
+        <p class="feed__post-cap">3 señales en su fachada que no debe ignorar</p>
+      </article>
+
+      <article class="feed__post">
+        <figure class="feed__post-img">
+          <img loading="lazy" decoding="async"
+               src="../../../03-media/images-final/images/20-post-antes-reparar-humedad.png"
+               alt="Antes de reparar una humedad, lea esto" />
+        </figure>
+        <p class="feed__post-cap">Antes de reparar una humedad, lea esto</p>
+      </article>
+
+      <article class="feed__post">
+        <figure class="feed__post-img">
+          <video muted loop playsinline autoplay aria-hidden="true" tabindex="-1">
+            <source src="../../../03-media/hero/videos/05-loop-balcony.mp4" type="video/mp4" />
+          </video>
+        </figure>
+        <p class="feed__post-cap">Inspección de balcón: lo que se ve y lo que no</p>
+      </article>
+
+      <article class="feed__post">
+        <figure class="feed__post-img">
+          <img loading="lazy" decoding="async"
+               src="../../../03-media/images-final/images/21-post-ite.png"
+               alt="La ITE: qué es y para qué sirve" />
+        </figure>
+        <p class="feed__post-cap">La ITE: qué es y para qué sirve</p>
+      </article>
+
+      <article class="feed__post">
+        <figure class="feed__post-img">
+          <img loading="lazy" decoding="async"
+               src="../../../03-media/images-final/images/23-post-adaptar-portal.png"
+               alt="Cómo adaptar un portal sin grandes obras" />
+        </figure>
+        <p class="feed__post-cap">Cómo adaptar un portal sin grandes obras</p>
+      </article>
+
+      <article class="feed__post">
+        <figure class="feed__post-img">
+          <video muted loop playsinline autoplay aria-hidden="true" tabindex="-1">
+            <source src="../../../03-media/hero/videos/03-loop-aged.mp4" type="video/mp4" />
+          </video>
+        </figure>
+        <p class="feed__post-cap">Cuando el tiempo deja su marca en la fachada</p>
+      </article>
+
+      <article class="feed__post">
+        <figure class="feed__post-img">
+          <img loading="lazy" decoding="async"
+               src="../../../03-media/images-final/images/24-post-caravista-juntas.png"
+               alt="Las juntas del ladrillo caravista que nadie revisa" />
+        </figure>
+        <p class="feed__post-cap">Fachada de caravista: grietas y juntas</p>
+      </article>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================================================
+     FAQ: preguntas reales antes de dar el primer paso
+     ============================================================ -->
+<section class="faq" id="faq" aria-labelledby="faq-heading">
+  <header class="faq__head">
+    <div>
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2 class="display" id="faq-heading">Antes<br/>de empezar.</h2>
+    </div>
+    <p class="faq__intro">Las dudas más habituales antes de dar el primer paso. Si la suya no está aquí, cuéntemela directamente.</p>
+  </header>
+
+  <div class="faq__lista">
+
+    <details class="faq__item">
+      <summary class="faq__q">¿En qué situaciones tiene sentido llamarme antes de decidir nada?</summary>
+      <p class="faq__a">Cuando aparecen fisuras, humedades o deformaciones que no sabe cómo valorar. Antes de comprar o vender un inmueble con dudas sobre su estado. Cuando el ayuntamiento o la comunidad le pide un documento que no sabe cómo preparar. Una consulta previa no compromete nada y ayuda a ordenar el caso.</p>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__q">¿Cuándo es obligatoria la ITE y qué ocurre si no se hace?</summary>
+      <p class="faq__a">En la provincia de Alicante, la ITE es obligatoria para edificios residenciales colectivos de cierta antigüedad, habitualmente a partir de los 50 años, con renovación cada 10. El plazo concreto depende del municipio. Si no se realiza, el ayuntamiento puede imponer sanciones y el seguro del edificio puede quedar comprometido.</p>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__q">¿Necesito certificado de eficiencia energética para alquilar o vender?</summary>
+      <p class="faq__a">Sí, es obligatorio desde 2013 para cualquier contrato de compraventa o arrendamiento. Sin él no puede formalizar la operación. El certificado tiene vigencia de 10 años salvo que haya cambios relevantes en el inmueble.</p>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__q">¿Qué es la licencia de segunda ocupación y cuándo hace falta?</summary>
+      <p class="faq__a">Es un documento municipal que acredita que una vivienda cumple las condiciones mínimas de habitabilidad. En la Comunitat Valenciana es obligatoria para contratos de arrendamiento de vivienda ya construida. No hay que confundirla con la licencia de primera ocupación, que se tramita al terminar una obra nueva.</p>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__q">¿Qué diferencia hay entre rehabilitación y reforma?</summary>
+      <p class="faq__a">La reforma actúa sobre la distribución o los acabados interiores sin alterar la estructura ni la envolvente del edificio. La rehabilitación interviene sobre elementos generales: fachada, cubierta, estructura o instalaciones comunes. La rehabilitación exige normalmente proyecto técnico y dirección de obra; la reforma puede o no, según su alcance.</p>
+    </details>
+
+    <details class="faq__item">
+      <summary class="faq__q">¿Se puede rehabilitar solo la fachada sin tocar el interior?</summary>
+      <p class="faq__a">Sí, siempre que la actuación no modifique elementos estructurales. Una rehabilitación de fachada requiere proyecto, permisos municipales y dirección facultativa. Es conveniente aprovecharla para revisar el estado de juntas, anclajes y encuentros con cubierta, que suelen ser el origen de las patologías.</p>
+    </details>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACTO
+     ============================================================ -->
+<section class="contacto" id="contacto">
+  <div class="contacto__copy">
+    <p class="eyebrow eyebrow--light">Contacto</p>
+    <h2 class="display">Cuénteme en qué momento<br/>está su edificio.</h2>
+    <p class="contacto__lede">Si el edificio da señales, falta documentación o toca intervenir, el primer paso es ordenar el caso.</p>
+    <p class="contacto__promise"><strong>Respondo personalmente</strong> · plazo &lt; 48 h · sin compromiso</p>
+  </div>
+  <form class="contacto__form" novalidate aria-label="Formulario de contacto">
+    <label>
+      <span>Nombre <em>(requerido)</em></span>
+      <input type="text" name="nombre" required autocomplete="name" placeholder="p. ej. María Pérez" aria-describedby="err-nombre" />
+      <small class="contacto__err" id="err-nombre" aria-live="polite"></small>
+    </label>
+    <label>
+      <span>Email <em>(requerido)</em></span>
+      <input type="email" name="email" required autocomplete="email" placeholder="usted@dominio.com" aria-describedby="err-email" />
+      <small class="contacto__err" id="err-email" aria-live="polite"></small>
+    </label>
+    <label class="contacto__full">
+      <span>¿Qué necesita?</span>
+      <select name="tipo" aria-describedby="hint-tipo">
+        <option value="informe">Informe técnico (fisuras, humedades, estado)</option>
+        <option value="ite">ITE / IEE (inspección de edificio)</option>
+        <option value="certificado">Certificado (eficiencia, segunda ocupación)</option>
+        <option value="rehabilitacion">Rehabilitación (fachada, cubierta, estructura)</option>
+        <option value="reforma">Reforma o ascensor</option>
+        <option value="otro">Otro / no estoy seguro</option>
+      </select>
+      <small class="contacto__hint" id="hint-tipo">Si duda, marque "no estoy seguro": ya lo afinamos en la primera llamada.</small>
+    </label>
+    <label class="contacto__full">
+      <span>Cuénteme el caso <em>(requerido)</em></span>
+      <textarea rows="4" name="caso" required minlength="20" maxlength="800"
+        placeholder="p. ej. Comunidad de vecinos en Elche, edificio de 1985 con humedades en la fachada principal tras las últimas lluvias. Buscamos un informe para presentar en junta."
+        aria-describedby="hint-caso err-caso"></textarea>
+      <small class="contacto__hint" id="hint-caso"><span class="contacto__counter">0 / 800</span></small>
+      <small class="contacto__err" id="err-caso" aria-live="polite"></small>
+    </label>
+    <button type="submit">Enviar consulta →</button>
+    <p class="contacto__legal">Sus datos se usan únicamente para responder a esta consulta. No los compartimos.</p>
+    <p class="contacto__success" hidden role="status" aria-live="polite">
+      <strong>✓ Consulta recibida.</strong>
+      Le responderé por email en menos de 48 horas con: <em>(1)</em> orientación inicial sobre qué servicio encaja, <em>(2)</em> documentación que conviene preparar y <em>(3)</em> propuesta de visita técnica si procede.
+    </p>
+  </form>
+  <dl class="contacto__data">
+    <div><dt>Email</dt><dd><a href="mailto:hola@pedrogonzalvez.com">hola@pedrogonzalvez.com</a></dd></div>
+    <div><dt>Teléfono</dt><dd><a href="tel:+34000000000">+34 000 000 000</a></dd></div>
+    <div><dt>Zona</dt><dd>Elche y provincia de Alicante</dd></div>
+    <div><dt>Horario</dt><dd>L–V · 9:00–18:00</dd></div>
+  </dl>
+</section>
+
+</main>
+
+<footer class="foot" role="contentinfo">
+  <div class="foot__brand">
+    <img src="../../../03-media/brand/logo-isotipo.svg" alt="" />
+    <p>
+      <strong>Pedro Gonzálvez Abadía</strong><br/>
+      <span>Arquitecto técnico colegiado · Elche, Alicante</span>
+    </p>
+  </div>
+  <nav class="foot__nav" aria-label="Pie de página">
+    <a href="#servicios">Servicios</a>
+    <a href="#sobre">Sobre Pedro</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#" aria-label="Aviso legal">Aviso legal</a>
+    <a href="#" aria-label="Política de privacidad">Privacidad</a>
+  </nav>
+  <p class="foot__legal">© <span id="y"></span> · <a href="mailto:hola@pedrogonzalvez.com">hola@pedrogonzalvez.com</a></p>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<script type="module" src="script.js"></script>
+<script src="../_shared/tweaks.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# Frame sequences (42MB — generated, not needed for prototype)
+03-media/hero/frames/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/

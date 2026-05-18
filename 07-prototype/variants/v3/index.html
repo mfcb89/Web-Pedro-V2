@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>V3 · Pedro Gonzálvez</title>
+<link rel="icon" href="../../../03-media/brand/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wdth,wght@75..125,300..900&family=Roboto+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../_shared/tweaks.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="trace" aria-hidden="true"></div>
+
+<!-- ===== HEADER BRUTALISTA: institucional, dentro del hero, no fijo ===== -->
+<header class="bnav">
+  <div class="bnav__top">
+    <span class="bnav__meta">38.27°N · 0.69°W</span>
+    <span class="bnav__meta">DOC. R-2026-04</span>
+    <span class="bnav__meta">EXP. ABIERTO</span>
+  </div>
+  <div class="bnav__main">
+    <a class="bnav__brand" href="#">
+      <img src="../../../03-media/brand/logo-isotipo.svg" alt="PG" />
+      <span>
+        <strong>Pedro Gonzálvez</strong>
+        <i class="bnav__pipe">|</i>
+        <em>Arquitecto técnico</em>
+      </span>
+    </a>
+    <nav class="bnav__links">
+      <a href="#practica">§01 Práctica</a>
+      <a href="#servicios">§02 Servicios</a>
+      <a href="#contacto">§03 Contacto</a>
+    </nav>
+    <a class="bnav__cta" href="#contacto">Cuénteme su caso<span aria-hidden="true">→</span></a>
+  </div>
+</header>
+
+<!-- Mini menu reaparece tras scroll fuera del hero -->
+<button class="bnav__mini" id="bnavMini" aria-label="Volver al menú">↑ MENÚ</button>
+
+<section class="hero">
+  <video class="hero__video" src="../../../03-media/hero/videos/01-loop-normal.mp4" muted loop playsinline preload="auto" autoplay></video>
+  <div class="hero__copy">
+    <p class="hero__kicker fade-in" data-delay="0" data-duration="800">
+      <span class="hero__dot"></span>EST. 1985 · ELCHE · ALICANTE · ESPAÑA
+    </p>
+    <h1 class="hero__title animated-heading"
+        data-text="EL TIEMPO PASA PARA TODOS.&#10;PARA LOS EDIFICIOS TAMBIÉN."></h1>
+    <p class="hero__lead fade-in" data-delay="900" data-duration="1000">
+      Reviso, documento y adapto edificios y viviendas para que sigan siendo
+      habitables, funcionales y seguros. Trato directo con el técnico que
+      estudia el caso.
+    </p>
+    <div class="hero__actions fade-in" data-delay="1200" data-duration="1000">
+      <a class="btn btn--solid" href="#contacto">[ Cuénteme su caso ]</a>
+      <a class="btn btn--ghost" href="#servicios">[ Ver servicios ↓ ]</a>
+    </div>
+  </div>
+  <div class="hero__tag fade-in" data-delay="1400" data-duration="1000">
+    <span><b>01</b> Diagnóstico</span>
+    <span><b>02</b> Documentación</span>
+    <span><b>03</b> Intervención</span>
+  </div>
+</section>
+
+<section class="practica" id="practica">
+  <header class="brut__head"><span>§ 01</span><h2>Práctica.</h2></header>
+  <div class="practica__body">
+    <div class="practica__text">
+      <h3 class="display">Criterio técnico para entender <em>cada</em> edificio.</h3>
+      <p class="lede">No solo cuido edificios. Mantengo ordenado su expediente técnico a lo largo del tiempo. Mi trabajo es leer su estado, ordenar lo necesario y documentar cada intervención.</p>
+      <p class="practica__sign">— Pedro Gonzálvez Abadía, arquitecto técnico colegiado.</p>
+    </div>
+    <figure class="practica__img">
+      <img src="../../../03-media/images-final/images/06-caso-edificio-caravista-80-90.png" alt="" />
+      <figcaption>Fig. 01 · Edificio caravista · 1980-90 · ELX</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="ejes">
+  <header class="brut__head"><span>§ 01.A</span><h2>Tres situaciones.</h2></header>
+  <p class="ejes__lede">No todos los encargos parten de la misma pregunta.</p>
+  <ol class="ejes__list">
+    <li>
+      <span class="ejes__num">01</span>
+      <h3>Cuando el edificio<br/>da señales.</h3>
+      <p>Patologías visibles, fisuras, humedades, deformaciones. Lo reviso, lo diagnostico y documento qué conviene hacer.</p>
+    </li>
+    <li>
+      <span class="ejes__num">02</span>
+      <h3>Cuando el expediente<br/>no está en regla.</h3>
+      <p>ITE, IEE, certificados, segunda ocupación. Identifico el trámite, preparo la documentación y la dejo lista para presentar.</p>
+    </li>
+    <li>
+      <span class="ejes__num">03</span>
+      <h3>Cuando el uso<br/>ya no encaja.</h3>
+      <p>Reformas, accesibilidad, ascensores. Valoro viabilidad, proyecto la intervención y dirijo la ejecución.</p>
+    </li>
+  </ol>
+</section>
+
+<section class="servicios" id="servicios">
+  <header class="brut__head"><span>§ 02</span><h2>Servicios.</h2></header>
+  <p class="servicios__lede">Servicios técnicos para analizar, adaptar y mantener su edificio.</p>
+  <ol class="servicios__list">
+    <li class="servicio"><span class="servicio__n">01</span>
+      <div><h3>Informes técnicos.</h3><p>Un informe técnico no es un trámite: es una lectura ordenada del estado del inmueble.</p><a class="servicio__cta" href="#contacto">[ Pedir revisión técnica ]</a></div>
+      <figure><img src="../../../03-media/images-final/images/17-caso-estructura-hormigon.png" alt="" /></figure>
+    </li>
+    <li class="servicio"><span class="servicio__n">02</span>
+      <div><h3>ITE / IEE.</h3><p>Inspección del edificio para detectar incidencias, priorizar actuaciones y dejar constancia técnica del estado real.</p><a class="servicio__cta" href="#contacto">[ Solicitar información ]</a></div>
+      <figure><img src="../../../03-media/images-final/images/12-servicio-ite-iee-edificio-comunidad.png" alt="" /></figure>
+    </li>
+    <li class="servicio"><span class="servicio__n">03</span>
+      <div><h3>Rehabilitación.</h3><p>Una rehabilitación bien planteada no tapa síntomas: corrige causas.</p><a class="servicio__cta" href="#contacto">[ Hablar de la obra ]</a></div>
+      <figure><img src="../../../03-media/images-final/images/13-servicio-rehabilitacion-fachada.png" alt="" /></figure>
+    </li>
+    <li class="servicio"><span class="servicio__n">04</span>
+      <div><h3>Certificados.</h3><p>El edificio no necesita más papeles. Necesita el documento adecuado, firmado y útil.</p><a class="servicio__cta" href="#contacto">[ Solicitar documentación ]</a></div>
+      <figure><img src="../../../03-media/images-final/images/21-post-ite.png" alt="" /></figure>
+    </li>
+  </ol>
+</section>
+
+<section class="contacto" id="contacto">
+  <header class="brut__head brut__head--light"><span>§ 03</span><h2>Contacto.</h2></header>
+  <div class="contacto__body">
+    <div class="contacto__copy">
+      <h3 class="display">Cuénteme en qué momento<br/>está su edificio.</h3>
+      <p class="contacto__lede">Si el edificio da señales, falta documentación o toca intervenir, el primer paso es ordenar el caso. Respondo personalmente en menos de 48 horas.</p>
+      <dl class="contacto__data">
+        <div><dt>Email</dt><dd><a href="mailto:hola@pedrogonzalvez.com">hola@pedrogonzalvez.com</a></dd></div>
+        <div><dt>Teléfono</dt><dd><a href="tel:+34000000000">+34 000 000 000</a></dd></div>
+        <div><dt>Zona</dt><dd>Elche y provincia de Alicante</dd></div>
+        <div><dt>Horario</dt><dd>L–V · 9:00–18:00</dd></div>
+      </dl>
+    </div>
+    <form class="contacto__form" onsubmit="event.preventDefault(); this.querySelector('.contacto__success').hidden = false;">
+      <label><span>Nombre</span><input type="text" required /></label>
+      <label><span>Email</span><input type="email" required /></label>
+      <label class="contacto__full"><span>Descripción del caso</span><textarea rows="4" required></textarea></label>
+      <button type="submit">[ Enviar consulta → ]</button>
+      <p class="contacto__legal">Sus datos se usan únicamente para responder a su consulta profesional.</p>
+      <p class="contacto__success" hidden>✓ Hemos recibido su consulta. Le responderé personalmente en menos de 48 horas.</p>
+    </form>
+  </div>
+</section>
+
+<script type="module" src="script.js"></script>
+<script src="../_shared/tweaks.js" defer></script>
+</body>
+</html>
